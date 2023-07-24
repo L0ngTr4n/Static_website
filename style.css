@@ -96,10 +96,11 @@ header {
     top: 100%;
     left: 0;
     display: none;
-    background-color: #444;
+    background-color: #cfcfcf;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 160px ;
+    box-shadow: 0 4px 6px rgba(177, 166, 166, 0.1);
     z-index: 1;
 }
 
@@ -109,14 +110,14 @@ header {
 
 .submenu a {
     display: block;
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.2s ease-in-out;
 }
 
 .submenu a:hover {
-    background-color: #555;
+    background-color: #919191;
 }
 
 /* Main content styles */
