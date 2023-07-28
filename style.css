@@ -179,3 +179,33 @@ footer{
     padding: 10px;
     text-align: center;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    .submenu {
+        position: static;
+        display: none;
+    }
+
+    .navbar li:hover .submenu {
+        display: block;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
