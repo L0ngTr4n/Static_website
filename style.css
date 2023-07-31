@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, p {
+html,body, h1, p {
     margin: 0;
     padding: 0;
 }
@@ -20,9 +20,15 @@ header {
     text-align: center;
 }
 
-/* Site logo */
+/* Site logo styles */
+.site-logo-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+    margin-left: 20px; /* Add some left margin for spacing */
+}
+
 .site-logo {
-    max-width: 80px;
+    max-width: 150px; /* Increase the max-width to make the logo bigger */
 }
 
 /* Search bar styles */
@@ -60,13 +66,13 @@ header {
     margin-right: 10px;
 }
 
-/* Dropdown Navbar styles */
+/* Navbar styles */
 .navbar {
     background-color: #333;
     color: #fff;
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Vertically center the items */
+    align-items: center;
+    justify-content: space-between; /* Add spacing between logo and navigation links */
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -79,46 +85,64 @@ header {
 
 .navbar li {
     padding: 10px;
-    position: relative;
 }
 
 .navbar a {
-    float: left;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
-    text-align: center;
     text-decoration: none;
 }
 
-/* Submenu styles */
-.submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
+
+/* Hamburger menu styles */
+.menu-checkbox {
+    display: none; 
+}
+
+.hamburger-menu {
     display: none;
-    background-color: #cfcfcf;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+}
+
+
+/* Mobile navigation menu styles */
+.menu-checkbox:checked + .hamburger-menu .mobile-menu {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    max-height: 200px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
     padding: 10px;
     border-radius: 5px;
-    min-width: 160px ;
-    box-shadow: 0 4px 6px rgba(177, 166, 166, 0.1);
-    z-index: 1;
+    max-height: 200px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
 }
 
-.navbar li:hover .submenu {
-    display: block;
+.mobile-menu ul {
+    opacity: 1;
 }
 
-.submenu a {
-    display: block;
-    color: #000000;
+.mobile-menu a {
+    color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.2s ease-in-out;
+    padding: 10px;
 }
 
-.submenu a:hover {
-    background-color: #919191;
-}
 
 /* Main content styles */
 .container {
@@ -182,58 +206,7 @@ footer{
     font-size: 14px;
 }
 
-/* Hamburger menu styles */
-.menu-checkbox {
-    display: none; /* Hide the checkbox */
-}
 
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger-bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px;
-}
-
-
-/* Mobile navigation menu styles */
-.menu-checkbox:checked + .hamburger-menu .mobile-menu {
-    display: flex;
-    height: auto; /* Set the initial height to 0 */
-    overflow: hidden; /* Hide the overflow content */
-    max-height: 0; /* Set the maximum height to 0 */
-    transition: max-height 0.3s ease-in-out; /* Add a transition effect for smooth animation */
-}
-
-.menu-checkbox:checked + .hamburger-menu .mobile-menu ul {
-    opacity: 1; /* Show the navigation links when the mobile menu expands */
-}
-
-.mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    max-height: 200px; /* Set a maximum height for the mobile menu */
-    transition: max-height 0.3s ease-in-out; /* Add a transition effect for smooth animation */
-    overflow: hidden; /* Hide the overflow content */
-}
-
-.mobile-menu ul {
-    opacity: 0; /* Hide the navigation links by default */
-}
-
-.mobile-menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -244,7 +217,7 @@ footer{
 
     .navbar ul {
         flex-direction: column;
-        display: none; /* Hide the regular navigation links on mobile devices */
+        display: none; 
 
     }
 
@@ -267,8 +240,8 @@ footer{
         justify-content: center;
     }
     .hamburger-menu {
-        display: flex; /* Show hamburger icon on mobile devices */
-        margin-right: 10px; /* Position the hamburger icon opposite to the cart icon */
+        display: flex; 
+        margin-right: 10px; 
     }
 
 

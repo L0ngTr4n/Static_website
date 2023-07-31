@@ -8,76 +8,69 @@
 
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-top">
-            <div class="cart-container">
-                <!-- Checkout cart -->
-                <div class="checkout-cart">
-                    <span class="cart-icon">&#128722;</span> <!-- Unicode for a cart icon -->
-                    <span>Cart (0)</span>
+        <!-- Header -->
+        <header>
+            <div class="header-top">
+                <div class="cart-container">
+                    <!-- Checkout cart -->
+                    <div class="checkout-cart">
+                        <span class="cart-icon">&#128722;</span> <!-- Unicode for a cart icon -->
+                        <span>Cart (0)</span>
+                    </div>
                 </div>
+    
+                <!-- Hamburger icon for mobile navigation -->
+                <input type="checkbox" class="menu-checkbox" id="menu-toggle">
+                <label class="hamburger-menu" for="menu-toggle">
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+                    <div class="hamburger-bar"></div>
+    
+                    <!-- Mobile navigation menu -->
+                    <nav class="mobile-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Fiction.html">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="Non-fiction.html">Non-Fiction</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
             </div>
-
-            <!-- Hamburger icon for mobile navigation -->
-            <input type="checkbox" class="menu-checkbox" id="menu-toggle">
-            <label class="hamburger-menu" for="menu-toggle">
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-                <div class="hamburger-bar"></div>
-
-                <!-- Mobile navigation menu -->
-                <nav class="mobile-menu">
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="Fiction.html">Fiction</a>
-                        </li>
-                        <li>
-                            <a href="Non-fiction.html">Non-Fiction</a>
-                        </li>
-                    </ul>
-                </nav>
-            </label>
-        </div>
-
-
-        <!-- <h1>My Online Bookstore</h1> -->
-
-        
-        <!-- Site logo -->
-        <img class="site-logo" src="logo.png" alt="Site Logo">
-
-
-
-         <!-- Navigation (Hidden for desktop, visible for mobile) -->
-         <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="Fiction.html">Fiction</a>
-                </li>
-                <li>
-                    <a href="Non-fiction.html">Non-Fiction</a>
-                </li>
-            </ul>
-
-            
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-button">Search</button>
+    
+            <!-- Site logo -->
+            <div class="site-logo-container">
+                <img href="index.html" class="site-logo" src="logo.png" alt="Site Logo">
             </div>
-        </nav>
-
-    </header>
+    
+            <!-- Navigation (Hidden for desktop, visible for mobile) -->
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Fiction.html">Fiction</a>
+                    </li>
+                    <li>
+                        <a href="Non-fiction.html">Non-Fiction</a>
+                    </li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">Search</button>
+                </div>
+            </nav>
+        </header>
 
     <!-- Main Content -->
     <div class="container">
-        <h2>Welcome to our Online Bookstore!</h2>
+        <h2>Welcome to Just Read It!</h2>
 
             <div class="categories">
                 <a href="Fiction.html" class="category-link">Fiction</a>
@@ -173,7 +166,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 My Online Bookstore. All rights reserved.</p>
+        <p>&copy; 2023 Just Read It. All rights reserved.</p>
     </footer>
 </body>
 </html>
