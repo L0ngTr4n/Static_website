@@ -23,18 +23,22 @@ header {
 /* Site logo styles */
 .site-logo-container {
     display: flex;
-    align-items: center; /* Vertically center the logo */
-    margin-left: 20px; /* Add some left margin for spacing */
+    align-items: center; 
+    margin-left: 20px; 
 }
 
 .site-logo {
-    max-width: 150px; /* Increase the max-width to make the logo bigger */
+    max-width: 150px; 
 }
 
 /* Search bar styles */
 .search-bar {
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* By default, align to the right */
+
+    /* Add some margin to separate the search bar from the cart icon */
+    /* margin-right: 20px; */
     
 }
 
@@ -72,7 +76,7 @@ header {
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Add spacing between logo and navigation links */
+    justify-content: space-between; 
     padding: 10px;
     font-family: Arial, sans-serif;
 }
@@ -212,13 +216,15 @@ footer{
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        /* align-items: flex-start; */
     }
 
     .navbar ul {
-        flex-direction: column;
+        /* flex-direction: column; */
         display: none; 
-
+        margin-top: 10px; /* Add some space between logo and navigation links */
+        align-items: stretch;
     }
 
     .navbar li {
@@ -226,23 +232,24 @@ footer{
         padding: 5px;
     }
 
-    .submenu {
-        position: static;
-        display: none;
-    }
 
-    .navbar li:hover .submenu {
-        display: block;
-    }
-
-    .search-bar {
+    /* .search-bar {
         margin-top: 10px;
         justify-content: center;
-    }
+    } */
     .hamburger-menu {
         display: flex; 
         margin-right: 10px; 
     }
+    /* Adjust the search bar positioning for mobile devices */
+    .search-bar {
+        justify-content: center;
+        margin: 10px ; /* Add some margin to center the search bar */
+    }
 
+    .search-input {
+        margin-left: 0; /* Remove the left margin to center the input field */
+        margin-right: 10px; /* Add some right margin to separate the input and button */
+    }
 
 }
