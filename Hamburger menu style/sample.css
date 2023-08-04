@@ -1,22 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
+.burger-container {
   max-width: 1050px;
   width: 90%;
   margin: auto;
 }
 
-.navbar {
+.burger-menu {
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
@@ -28,15 +18,15 @@ body {
   height: 62px;
 }
 
-.navbar .menu-items {
+.burger-menu .menu-items {
   display: flex;
 }
 
-.navbar .nav-container li {
+.burger-menu .nav-container li {
   list-style: none;
 }
 
-.navbar .nav-container a {
+.burger-menu .nav-container a {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
@@ -44,7 +34,7 @@ body {
   padding: 0.7rem;
 }
 
-.navbar .nav-container a:hover{
+.burger-menu .nav-container a:hover{
     font-weight: bolder;
 }
 
@@ -101,7 +91,7 @@ body {
   transition: transform 0.4s ease-in-out;
 }
 
-.navbar .menu-items {
+.burger-menu .menu-items {
   padding-top: 120px;
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   height: 100vh;
@@ -115,19 +105,19 @@ body {
   text-align: center;
 }
 
-.navbar .menu-items li {
+.burger-menu .menu-items li {
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.logo {
+/* .logo {
   position: absolute;
   top: 5px;
   right: 15px;
   font-size: 1.2rem;
   color: #0e2431;
-}
+} */
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
