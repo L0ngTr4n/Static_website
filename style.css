@@ -449,3 +449,11 @@ footer{
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+.form-title{
+    border-width: 10cap;
+    margin-left: 20px;
+    text-align: justify;
+    text-transform: uppercase;
+    /* padding-right */
+}
