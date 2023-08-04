@@ -447,13 +447,20 @@ footer{
 .contact {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px;
 }
 
 .form-title{
-    border-width: 10cap;
-    margin-left: 20px;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    /* border-width: 10cap; */
+    margin-left: 30px;
     text-align: justify;
     text-transform: uppercase;
-    /* padding-right */
+    /* padding-inline-start: 20cap; */
 }
