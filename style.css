@@ -64,6 +64,9 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+.search-icon{
+    display: none;
+}
 
 /* Checkout cart */
 .checkout-cart {
@@ -105,54 +108,6 @@ header {
 }
 
 
-/* Hamburger menu styles */
-.menu-checkbox {
-    display: none; 
-}
-
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger-bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 3px;
-}
-
-
-/* Mobile navigation menu styles */
-.menu-checkbox:checked + .hamburger-menu .mobile-menu {
-    display: flex;
-    height: auto;
-    overflow: hidden;
-    max-height: 200px;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.mobile-menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    max-height: 200px;
-    transition: max-height 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.mobile-menu ul {
-    opacity: 1;
-}
-
-.mobile-menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
 
 
 /* Main content styles */
@@ -160,7 +115,7 @@ header {
     text-align: center;
     width: 100%;
     margin: auto;
-    padding: 10px;
+    padding: 0px;
 }
 
 .book {
@@ -191,13 +146,13 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    background-color: #f0f0f0;
+    background-color: #333;
     margin-bottom: 20px;
     width: 100%; /* Make the div span the full width */
 }
 
 .category-link {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -310,7 +265,7 @@ footer{
 
     .nav-container {
     display: block;
-    position: static;
+    position: relative;
     height: 60px;
     }
 
@@ -411,12 +366,16 @@ footer{
     display: none;
     }
 
-
-
-
-
+    .search-icon{
+        position: absolute;
+        margin-left: 35%;
+        top: 78px;
+        display:inline;
+        max-width: 30px;
+    }
 
 }
+
 
 
 /* contact page */
