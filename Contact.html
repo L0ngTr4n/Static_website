@@ -89,7 +89,72 @@
         </header>
 
         <article>
-            <div class="form-title">Contact Form</div> 
+
+
+                    <!-- Main Content -->
+            <main class="contact-page">
+                <h2>Contact Us</h2>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-purpose">Contact Purpose:</label>
+                        <select id="contact-purpose" name="contact-purpose">
+                            <option value="sell-books">I want to sell books</option>
+                            <option value="buy-books">I want to buy books</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contact Preference:</label>
+                        <br>
+                        <label for="by-email">By email</label>
+                        <input type="checkbox" id="by-email" name="contact-preference" value="by-email">
+
+                        <label for="by-phone">By phone</label>
+                        <input type="checkbox" id="by-phone" name="contact-preference" value="by-phone">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label>Receive Weekly Newsletter:</label>
+                        <br>
+                        <label for="newsletter-yes">Yes</label>
+                        <input type="radio" id="newsletter-yes" name="newsletter" value="yes" checked>
+
+                        <label for="newsletter-no">No</label>
+                        <input type="radio" id="newsletter-no" name="newsletter" value="no">
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="extra-notes">Extra Notes:</label>
+                        <textarea id="extra-notes" name="extra-notes" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </main>
+
+
+            <!-- <div class="form-title">Contact Form</div> 
             <div class="contact">
                 <form action="">
                     <label for="fname">First Name</label>
@@ -112,15 +177,22 @@
                     <input type="submit" value="Submit">
                 </form>
                 <br>
-            </div>
+            </div> -->
         </article>
 
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2023 Just Read It. All rights reserved.</p>
-            <p>Privacy policy</p>
-            <p><a href="Contact.html">Contact us</a></p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Copyright Notice</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2023 My Online Bookstore. All rights reserved.</p>
         </footer>
 
     </body>
