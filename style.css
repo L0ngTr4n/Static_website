@@ -461,53 +461,10 @@ footer{
     cursor: pointer;
 }
 
-
-/* contact page */
-/* .contact input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.options{
+    font-style: normal;
 }
 
-.contact input[type=submit] {
-  background-color: #444;
-  color: rgb(255, 255, 255);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contact input[type=submit]:hover {
-  background-color: #747474cb;
-}
-
-.contact {
-  width: 100%;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 30px;
-}
-
-.form-title{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 2em;
-    margin-block-end: 2em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    margin-left: 30px;
-    text-align: justify;
-    text-transform: uppercase; */
-    /* border-width: 10cap; */
-    /* padding-inline-start: 20cap; */
-/* } */
 
 
 /* Breadcrumb styles */
