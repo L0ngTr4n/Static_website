@@ -1,7 +1,10 @@
 /* Reset some default styles */
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-html, h1, p {
+
+html, h1 {
     margin: 0;
     padding: 0;
 }
@@ -44,11 +47,7 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* By default, align to the right */
-
-    /* Add some margin to separate the search bar from the cart icon */
-    /* margin-right: 20px; */
-    
+    justify-content: flex-end; 
 }
 
 .search-input {
@@ -154,7 +153,7 @@ article{
     padding: 10px 0;
     background-color: #333;
     margin-bottom: 20px;
-    width: 100%; /* Make the div span the full width */
+    width: 100%; 
 }
 
 .category-link {
@@ -167,7 +166,7 @@ article{
 }
 
 .category-link:hover {
-    background-color: #ddd;
+    background-color: #818181;
 }
 
 footer{
@@ -182,7 +181,7 @@ footer{
 /* Footer navigation styles */
 .footer-nav {
     text-align: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 .footer-nav ul {
@@ -204,13 +203,43 @@ footer{
     text-decoration: underline;
 }
 
+.nowrap{
+    white-space: nowrap;
+}
+
+/* Social links */
+.social-links {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+
 
 
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
 
     .navbar {
+        display: none; 
         flex-direction: column;
         align-items: center;
         /* align-items: flex-start; */
@@ -218,8 +247,7 @@ footer{
 
     .navbar ul {
         /* flex-direction: column; */
-        display: none; 
-        margin-top: 10px; /* Add some space between logo and navigation links */
+        margin-top: 10px;
         align-items: stretch;
     }
 
@@ -228,27 +256,11 @@ footer{
         padding: 5px;
     }
 
-
-    /* .search-bar {
-        margin-top: 10px;
-        justify-content: center;
-    } */
-    /* .hamburger-menu {
-        display: flex; 
-        margin-right: 10px; 
-    } */
-    /* Adjust the search bar positioning for mobile devices */
-
     .search-bar {
         display: none        
-        /* justify-content: center;
-            margin: 10px ;  */
     }
 
-    /* .search-input {
-        margin-left: 0; 
-        margin-right: 10px; 
-    } */
+
 
 
 
@@ -372,14 +384,6 @@ footer{
     font-weight: 500;
     }
 
-    /* .logo {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
-    } */
-
     .nav-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
     }
@@ -493,6 +497,7 @@ footer{
 }
 
 .breadcrumb-arrow {
+    padding-left: 10px;
     position: static;
     top: 50%;
     right: -5px;
@@ -504,8 +509,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 100px;
+    padding: 60px;
 }
 
 .book-images {
@@ -532,7 +537,8 @@ footer{
 }
 
 .book-info {
-    flex: 1;
+    padding: initial;
+    /* flex: 1; */
     max-width: 300px;
     text-align: center;
 }
@@ -556,6 +562,6 @@ footer{
 
 /* Book description styles */
 .book-description {
-    flex: 1;
+    flex: auto;
     margin-top: 20px;
 }
