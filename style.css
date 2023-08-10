@@ -473,6 +473,8 @@ footer{
 
 /* Breadcrumb styles */
 .breadcrumb {
+    display: flex;
+    justify-content: center;
     background-color: #f0f0f0;
     padding: 10px;
     font-family: Arial, sans-serif;
@@ -499,8 +501,6 @@ footer{
 .breadcrumb-arrow {
     padding-left: 10px;
     position: static;
-    top: 50%;
-    right: -5px;
     transform: translateY(-50%);
 }
 
@@ -508,7 +508,7 @@ footer{
 .book-details {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 100px;
     padding: 60px;
 }
