@@ -1,19 +1,43 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Static website
+Author: Tran Duc Long
+ID: 3978673
+Acknowledgement: 
+https://www.w3schools.com
+https://www.barnesandnoble.com
+https://realfavicongenerator.net 
+https://www.flaticon.com
+https://www.youtube.com/watch?v=kwmHaXUAa0M -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Online Bookstore</title>
-
+    <title>Just Read It !!!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
+    <video autoplay muted loop plays-inline class="back-video">
+        <source src="img/back-video.mp4" type="video/mp4">
+    </video>
     <!-- Header -->
     <header>
         <a href="index.html">
-        <img class="site-logo" src="img\logo.png" alt="Site Logo">
+            <img class="site-logo" src="img\logo.png" alt="Site Logo">
         </a>
-        <div class="header-top">                    
+        <div class="header-top">
             <!-- Checkout cart -->
             <!-- <div class="cart-container">
                 <div class="checkout-cart">
@@ -26,63 +50,63 @@
 
             <nav>
                 <div class="burger-menu">
-                  <div class="burger-container nav-container">
-                      <input class="checkbox" type="checkbox" name="" id="" />
-                      <div class="hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
-                      </div>  
+                    <div class="burger-container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
 
-                    <!-- <div class="logo">
+                        <!-- <div class="logo">
                       <h1>Navbar</h1>
                     </div> -->
-                    <div class="menu-items">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="Fiction.html">Fiction</a>
-                        </li>
-                        <li>
-                            <a href="Non-fiction.html">Non-Fiction</a>
-                        </li>
-                        <li>
-                            <a href="Contact.html">Contact</a>
-                        </li>
+                        <div class="menu-items">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="Fiction.html">Fiction</a>
+                            </li>
+                            <li>
+                                <a href="Non-fiction.html">Non-Fiction</a>
+                            </li>
+                            <li>
+                                <a href="Contact.html">Contact</a>
+                            </li>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <img class="search-icon"src="img\search-solid.png" alt="search-icon">
+                <img class="search-icon" src="img\search-solid.png" alt="search-icon">
 
             </nav>
 
 
 
-        <!-- Navigation (Hidden for desktop, visible for mobile) -->
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="Fiction.html">Fiction</a>
-                </li>
-                <li>
-                    <a href="Non-fiction.html">Non-Fiction</a>
-                </li>
-                <li>
-                    <a href="Contact.html">Contact</a>
-                </li>
-            </ul>
-            
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-button">Search</button>
-            </div>
+            <!-- Navigation (Hidden for desktop, visible for mobile) -->
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="Fiction.html">Fiction</a>
+                    </li>
+                    <li>
+                        <a href="Non-fiction.html">Non-Fiction</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
 
-        </nav>
-        <!-- <div class="search-bar">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-button">Search</button>
+                </div>
+
+            </nav>
+            <!-- <div class="search-bar">
             <input type="text" class="search-input" placeholder="Search...">
             <button class="search-button">Search</button>
         </div> -->
@@ -93,93 +117,95 @@
         <div class="container">
             <h2>Fiction</h2>
 
-                <div class="categories">
-                    <a href="Horror-booklist.html" class="category-link"> Horror</a>
-                </div>
-                <div class="book">
-                    <div class="book-card">
-                        <a href="Bookdetail1.html"><img class="book-image" src="img/hor1.webp" alt="Holly"></a>
-                        <h3>Holly </h3>
-                        <p>Stephen King</p>
-                        <p>Price: $21.00</p>
-                        <a href="Bookdetail1.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail2.html"><img class="book-image" src="img/hor2.webp" alt="Such Sharp Teeth"></a>
-                        <h3>Such Sharp Teeth</h3>
-                        <p>Rachel Harrison</p>
-                        <p>Price: $17.00</p>
-                        <a href="Bookdetail2.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail3.html"><img class="book-image" src="img/hor3.webp" alt="Playground"></a>
-                        <h3>Playground</h3>
-                        <p>Aron Beauregard</p>
-                        <p>Price: $15.99</p>
-                        <a href="Bookdetail3.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail4.html"><img class="book-image" src="img/hor4.jpg" alt="Hidden Pictures: A Novel"></a>
-                        <h3>Hidden Pictures: A Novel</h3>
-                        <p> Jason Rekulak</p>
-                        <p>Price: $17.99</p>
-                        <a href="Bookdetail4.html"><button>Add to Cart</button></a>
-                    </div>
-
+            <div class="categories">
+                <a href="Horror-booklist.html" class="category-link"> Horror</a>
+            </div>
+            <div class="book">
+                <div class="book-card">
+                    <a href="Bookdetail1.html"><img class="book-image" src="img/hor1.webp" alt="Holly"></a>
+                    <h3>Holly </h3>
+                    <p>Stephen King</p>
+                    <p>Price: $21.00</p>
+                    <a href="Bookdetail1.html"><button>Add to Cart</button></a>
                 </div>
 
-                <br>
-
-                <div class="categories">
-                    <a href="Romance-booklist.html" class="category-link">Romance</a>
+                <div class="book-card">
+                    <a href="Bookdetail2.html"><img class="book-image" src="img/hor2.webp" alt="Such Sharp Teeth"></a>
+                    <h3>Such Sharp Teeth</h3>
+                    <p>Rachel Harrison</p>
+                    <p>Price: $17.00</p>
+                    <a href="Bookdetail2.html"><button>Add to Cart</button></a>
                 </div>
-                
-                <br>
 
-                <!-- Book List -->
-                <div class="book">
-                    <div class="book-card">
-                        <a href="Bookdetail7.html"><img class="book-image" src="img/rom1.webp" alt="Iron Flame"></a>
-                        <h3>Iron Flame</h3>
-                        <p>Rebecca Yarros</p>
-                        <p>Price: $26.39</p>
-                        <a href="Bookdetail7.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail8.html"><img class="book-image" src="img/rom2.webp" alt="My Queendom for a Horse"></a>
-                        <h3>My Queendom for a Horse</h3>
-                        <p>Bridget E. Baker</p>
-                        <p>Price: $0.99</p>
-                        <a href="Bookdetail8.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail9.html"><img class="book-image" src="img/rom3.webp" alt="Out of Nowhere"></a>
-                        <h3>Out of Nowhere</h3>
-                        <p>Sandra Brown</p>
-                        <p>Price: $21.00</p>
-                        <a href="Bookdetail9.html"><button>Add to Cart</button></a>
-                    </div>
-
-                    <div class="book-card">
-                        <a href="Bookdetail10.html"><img class="book-image" src="img/rom4.webp" alt="Fourth Wing"></a>
-                        <h3>Fourth Wing</h3>
-                        <p>Rebecca Yarros</p>
-                        <p>Price: $26.99</p>
-                        <a href="Bookdetail10.html"><button>Add to Cart</button></a>
-                    </div>
-
+                <div class="book-card">
+                    <a href="Bookdetail3.html"><img class="book-image" src="img/hor3.webp" alt="Playground"></a>
+                    <h3>Playground</h3>
+                    <p>Aron Beauregard</p>
+                    <p>Price: $15.99</p>
+                    <a href="Bookdetail3.html"><button>Add to Cart</button></a>
                 </div>
+
+                <div class="book-card">
+                    <a href="Bookdetail4.html"><img class="book-image" src="img/hor4.jpg"
+                            alt="Hidden Pictures: A Novel"></a>
+                    <h3>Hidden Pictures: A Novel</h3>
+                    <p> Jason Rekulak</p>
+                    <p>Price: $17.99</p>
+                    <a href="Bookdetail4.html"><button>Add to Cart</button></a>
+                </div>
+
+            </div>
+
+            <br>
+
+            <div class="categories">
+                <a href="Romance-booklist.html" class="category-link">Romance</a>
+            </div>
+
+            <br>
+
+            <!-- Book List -->
+            <div class="book">
+                <div class="book-card">
+                    <a href="Bookdetail7.html"><img class="book-image" src="img/rom1.webp" alt="Iron Flame"></a>
+                    <h3>Iron Flame</h3>
+                    <p>Rebecca Yarros</p>
+                    <p>Price: $26.39</p>
+                    <a href="Bookdetail7.html"><button>Add to Cart</button></a>
+                </div>
+
+                <div class="book-card">
+                    <a href="Bookdetail8.html"><img class="book-image" src="img/rom2.webp"
+                            alt="My Queendom for a Horse"></a>
+                    <h3>My Queendom for a Horse</h3>
+                    <p>Bridget E. Baker</p>
+                    <p>Price: $0.99</p>
+                    <a href="Bookdetail8.html"><button>Add to Cart</button></a>
+                </div>
+
+                <div class="book-card">
+                    <a href="Bookdetail9.html"><img class="book-image" src="img/rom3.webp" alt="Out of Nowhere"></a>
+                    <h3>Out of Nowhere</h3>
+                    <p>Sandra Brown</p>
+                    <p>Price: $21.00</p>
+                    <a href="Bookdetail9.html"><button>Add to Cart</button></a>
+                </div>
+
+                <div class="book-card">
+                    <a href="Bookdetail10.html"><img class="book-image" src="img/rom4.webp" alt="Fourth Wing"></a>
+                    <h3>Fourth Wing</h3>
+                    <p>Rebecca Yarros</p>
+                    <p>Price: $26.99</p>
+                    <a href="Bookdetail10.html"><button>Add to Cart</button></a>
+                </div>
+
+            </div>
             <br>
 
         </div>
-        
+
     </article>
-    
+
     <!-- Footer -->
     <footer>
         <nav class="footer-nav">
@@ -202,4 +228,5 @@
     </footer>
 
 </body>
+
 </html>

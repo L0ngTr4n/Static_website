@@ -1,21 +1,42 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Static website
+Author: Tran Duc Long
+ID: 3978673
+Acknowledgement: 
+https://www.w3schools.com
+https://www.barnesandnoble.com
+https://realfavicongenerator.net 
+https://www.flaticon.com
+https://www.youtube.com/watch?v=kwmHaXUAa0M -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Just Read It !!!</title>
-    
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <a href="index.html">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Read It !!!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
             <img class="site-logo" src="img/logo.png" alt="Site Logo">
-            </a>
-            <div class="header-top">                    
-                <!-- Checkout cart -->
-                <!-- <div class="cart-container">
+        </a>
+        <div class="header-top">
+            <!-- Checkout cart -->
+            <!-- <div class="cart-container">
                     <div class="checkout-cart">
                         <span class="cart-icon">&#128722;</span> 
                         <span>Cart (0)</span>
@@ -24,15 +45,15 @@
 
 
 
-                <nav>
-                    <div class="burger-menu">
-                        <div class="burger-container nav-container">
-                            <input class="checkbox" type="checkbox" name="" id="" />
-                            <div class="hamburger-lines">
+            <nav>
+                <div class="burger-menu">
+                    <div class="burger-container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
                             <span class="line line1"></span>
                             <span class="line line2"></span>
                             <span class="line line3"></span>
-                            </div>  
+                        </div>
 
                         <!-- <div class="logo">
                             <h1>Navbar</h1>
@@ -51,14 +72,14 @@
                                 <a href="Contact.html">Contact</a>
                             </li>
                         </div>
-                        </div>
                     </div>
-                    <img class="search-icon"src="img\search-solid.png" alt="search-icon">
+                </div>
+                <img class="search-icon" src="img\search-solid.png" alt="search-icon">
 
-                </nav>
+            </nav>
 
 
-    
+
             <!-- Navigation (Hidden for desktop, visible for mobile) -->
             <nav class="navbar">
                 <ul>
@@ -75,7 +96,7 @@
                         <a href="Contact.html">Contact</a>
                     </li>
                 </ul>
-                
+
                 <div class="search-bar">
                     <input type="text" class="search-input" placeholder="Search...">
                     <button class="search-button">Search</button>
@@ -86,76 +107,96 @@
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
             </div> -->
-        </header>
+    </header>
 
-        <article>
-          <!-- Breadcrumb -->
-    <nav class="breadcrumb">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><span class="breadcrumb-arrow">></span></li>
-            <li><a href="History-booklist.html">History</a></li>
-            <li><span class="breadcrumb-arrow">></span></li>
-            <li>The Wager: A Tale of Shipwreck, Mutiny and Murder</li>
-        </ul>
-    </nav>
+    <article>
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span class="breadcrumb-arrow">></span></li>
+                <li><a href="History-booklist.html">History</a></li>
+                <li><span class="breadcrumb-arrow">></span></li>
+                <li>The Wager: A Tale of Shipwreck, Mutiny and Murder</li>
+            </ul>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="book-details">
-        <div class="book-images">
-            <!-- Large book image -->
-            <img class="large-image" src="img/his6.webp" alt="Large Book Image">
-            
-            <!-- Small book images -->
-            <div class="small-images">
-                <img src="img/his6.webp" alt="Small Book Image 1">
-                <img src="img/his6.webp" alt="Small Book Image 2">
-                <img src="img/his6.webp" alt="Small Book Image 3">
+        <!-- Main Content -->
+        <main class="book-details">
+            <div class="book-images">
+                <!-- Large book image -->
+                <img class="large-image" src="img/his6.webp" alt="Large Book Image">
+
+                <!-- Small book images -->
+                <div class="small-images">
+                    <img src="img/his6.webp" alt="Small Book Image 1">
+                    <img src="img/his6.webp" alt="Small Book Image 2">
+                    <img src="img/his6.webp" alt="Small Book Image 3">
+                </div>
             </div>
-        </div>
 
-        <div class="book-info">
-            <h2>The Wager: A Tale of Shipwreck, Mutiny and Murder</h2>
-            <p class="book-price">$27.00</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
+            <div class="book-info">
+                <h2>The Wager: A Tale of Shipwreck, Mutiny and Murder</h2>
+                <p class="book-price">$27.00</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
 
-        <!-- Book Description -->
-        <div class="book-description">
-            <h3>Description</h3>
-            <p>
-                On January 28, 1742, a ramshackle vessel of patched-together wood and cloth washed up on the coast of Brazil. Inside were thirty emaciated men, barely alive, and they had an extraordinary tale to tell. They were survivors of His Majesty’s Ship the Wager, a British vessel that had left England in 1740 on a secret mission during an imperial war with Spain. While the Wager had been chasing a Spanish treasure-filled galleon known as “the prize of all the oceans,” it had wrecked on a desolate island off the coast of Patagonia. The men, after being marooned for months and facing starvation, built the flimsy craft and sailed for more than a hundred days, traversing nearly 3,000 miles of storm-wracked seas. They were greeted as heroes.
-            </p>
-            <p>
-                But then ... six months later, another, even more decrepit craft landed on the coast of Chile. This boat contained just three castaways, and they told a very different story. The thirty sailors who landed in Brazil were not heroes – they were mutineers. The first group responded with countercharges of their own, of a tyrannical and murderous senior officer and his henchmen. It became clear that while stranded on the island the crew had fallen into anarchy, with warring factions fighting for dominion over the barren wilderness. As accusations of treachery and murder flew, the Admiralty convened a court martial to determine who was telling the truth. The stakes were life-and-death—for whomever the court found guilty could hang.
-            </p>
-            <p>
-                The Wager is a grand tale of human behavior at the extremes told by one of our greatest nonfiction writers. Grann’s recreation of the hidden world on a British warship rivals the work of Patrick O’Brian, his portrayal of the castaways’ desperate straits stands up to the classics of survival writing such as The Endurance, and his account of the court martial has the savvy of a Scott Turow thriller. As always with Grann’s work, the incredible twists of the narrative hold the reader spellbound.
-            </p>
-        </div>
-    </main>
+            <!-- Book Description -->
+            <div class="book-description">
+                <h3>Description</h3>
+                <p>
+                    On January 28, 1742, a ramshackle vessel of patched-together wood and cloth washed up on the coast
+                    of Brazil. Inside were thirty emaciated men, barely alive, and they had an extraordinary tale to
+                    tell. They were survivors of His Majesty’s Ship the Wager, a British vessel that had left England in
+                    1740 on a secret mission during an imperial war with Spain. While the Wager had been chasing a
+                    Spanish treasure-filled galleon known as “the prize of all the oceans,” it had wrecked on a desolate
+                    island off the coast of Patagonia. The men, after being marooned for months and facing starvation,
+                    built the flimsy craft and sailed for more than a hundred days, traversing nearly 3,000 miles of
+                    storm-wracked seas. They were greeted as heroes.
+                </p>
+                <p>
+                    But then ... six months later, another, even more decrepit craft landed on the coast of Chile. This
+                    boat contained just three castaways, and they told a very different story. The thirty sailors who
+                    landed in Brazil were not heroes – they were mutineers. The first group responded with
+                    countercharges of their own, of a tyrannical and murderous senior officer and his henchmen. It
+                    became clear that while stranded on the island the crew had fallen into anarchy, with warring
+                    factions fighting for dominion over the barren wilderness. As accusations of treachery and murder
+                    flew, the Admiralty convened a court martial to determine who was telling the truth. The stakes were
+                    life-and-death—for whomever the court found guilty could hang.
+                </p>
+                <p>
+                    The Wager is a grand tale of human behavior at the extremes told by one of our greatest nonfiction
+                    writers. Grann’s recreation of the hidden world on a British warship rivals the work of Patrick
+                    O’Brian, his portrayal of the castaways’ desperate straits stands up to the classics of survival
+                    writing such as The Endurance, and his account of the court martial has the savvy of a Scott Turow
+                    thriller. As always with Grann’s work, the incredible twists of the narrative hold the reader
+                    spellbound.
+                </p>
+            </div>
+        </main>
     </article>
 
-        <!-- Footer -->
-        <footer>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#" class="nowrap">About Us</a></li>
-                    <li><a href="#" class="nowrap">Privacy Policy</a></li>
-                    <li><a href="#" class="nowrap">Terms and Conditions</a></li>
-                    <li><a href="#" class="nowrap">Copyright Notice</a></li>
-                    <li><a href="Contact.html" class="nowrap">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="social-links">
-                <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-                <a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
-                <a href="https://github.com/L0ngTr4n/Static_website"><img src="img/github.png" alt="GitHub"></a>
-            </div>
-            <p>&copy; 2023 Just Read It. All rights reserved.</p>
-        </footer>
-        
-    </body>
+    <!-- Footer -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#" class="nowrap">About Us</a></li>
+                <li><a href="#" class="nowrap">Privacy Policy</a></li>
+                <li><a href="#" class="nowrap">Terms and Conditions</a></li>
+                <li><a href="#" class="nowrap">Copyright Notice</a></li>
+                <li><a href="Contact.html" class="nowrap">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
+            <a href="https://github.com/L0ngTr4n/Static_website"><img src="img/github.png" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2023 Just Read It. All rights reserved.</p>
+    </footer>
+
+</body>
+
 </html>

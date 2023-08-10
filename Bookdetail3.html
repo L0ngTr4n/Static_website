@@ -1,21 +1,42 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Static website
+Author: Tran Duc Long
+ID: 3978673
+Acknowledgement: 
+https://www.w3schools.com
+https://www.barnesandnoble.com
+https://realfavicongenerator.net 
+https://www.flaticon.com
+https://www.youtube.com/watch?v=kwmHaXUAa0M -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Just Read It !!!</title>
-    
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <a href="index.html">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Read It !!!</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html">
             <img class="site-logo" src="img/logo.png" alt="Site Logo">
-            </a>
-            <div class="header-top">                    
-                <!-- Checkout cart -->
-                <!-- <div class="cart-container">
+        </a>
+        <div class="header-top">
+            <!-- Checkout cart -->
+            <!-- <div class="cart-container">
                     <div class="checkout-cart">
                         <span class="cart-icon">&#128722;</span> 
                         <span>Cart (0)</span>
@@ -24,15 +45,15 @@
 
 
 
-                <nav>
-                    <div class="burger-menu">
-                        <div class="burger-container nav-container">
-                            <input class="checkbox" type="checkbox" name="" id="" />
-                            <div class="hamburger-lines">
+            <nav>
+                <div class="burger-menu">
+                    <div class="burger-container nav-container">
+                        <input class="checkbox" type="checkbox" name="" id="" />
+                        <div class="hamburger-lines">
                             <span class="line line1"></span>
                             <span class="line line2"></span>
                             <span class="line line3"></span>
-                            </div>  
+                        </div>
 
                         <!-- <div class="logo">
                             <h1>Navbar</h1>
@@ -51,14 +72,14 @@
                                 <a href="Contact.html">Contact</a>
                             </li>
                         </div>
-                        </div>
                     </div>
-                    <img class="search-icon"src="img\search-solid.png" alt="search-icon">
+                </div>
+                <img class="search-icon" src="img\search-solid.png" alt="search-icon">
 
-                </nav>
+            </nav>
 
 
-    
+
             <!-- Navigation (Hidden for desktop, visible for mobile) -->
             <nav class="navbar">
                 <ul>
@@ -75,7 +96,7 @@
                         <a href="Contact.html">Contact</a>
                     </li>
                 </ul>
-                
+
                 <div class="search-bar">
                     <input type="text" class="search-input" placeholder="Search...">
                     <button class="search-button">Search</button>
@@ -86,73 +107,80 @@
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
             </div> -->
-        </header>
+    </header>
 
-        <article>
-          <!-- Breadcrumb -->
-    <nav class="breadcrumb">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><span class="breadcrumb-arrow">></span></li>
-            <li><a href="Horror-booklist.html">Horror</a></li>
-            <li><span class="breadcrumb-arrow">></span></li>
-            <li>Playground</li>
-        </ul>
-    </nav>
+    <article>
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span class="breadcrumb-arrow">></span></li>
+                <li><a href="Horror-booklist.html">Horror</a></li>
+                <li><span class="breadcrumb-arrow">></span></li>
+                <li>Playground</li>
+            </ul>
+        </nav>
 
-    <!-- Main Content -->
-    <main class="book-details">
-        <div class="book-images">
-            <!-- Large book image -->
-            <img class="large-image" src="img/hor3.webp" alt="Large Book Image">
-            
-            <!-- Small book images -->
-            <div class="small-images">
-                <img src="img/hor3.webp" alt="Small Book Image 1">
-                <img src="img/hor3.webp" alt="Small Book Image 2">
-                <img src="img/hor3.webp" alt="Small Book Image 3">
+        <!-- Main Content -->
+        <main class="book-details">
+            <div class="book-images">
+                <!-- Large book image -->
+                <img class="large-image" src="img/hor3.webp" alt="Large Book Image">
+
+                <!-- Small book images -->
+                <div class="small-images">
+                    <img src="img/hor3.webp" alt="Small Book Image 1">
+                    <img src="img/hor3.webp" alt="Small Book Image 2">
+                    <img src="img/hor3.webp" alt="Small Book Image 3">
+                </div>
             </div>
-        </div>
 
-        <div class="book-info">
-            <h2>Playground</h2>
-            <p class="book-price">$15.99</p>
-            <button class="add-to-cart-button">Add to Cart</button>
-        </div>
+            <div class="book-info">
+                <h2>Playground</h2>
+                <p class="book-price">$15.99</p>
+                <button class="add-to-cart-button">Add to Cart</button>
+            </div>
 
-        <!-- Book Description -->
-        <div class="book-description">
-            <h3>Description</h3>
-            <p>
-                Three low-income families have been given a handsome retainer to join Geraldine Borden for a day at her cliffside estate. All the parents must do to collect the rest of their money is allow their children to test out the revolutionary playground equipment Geraldine has been working on for decades. But there's a reason the structures in the bowels of her gothic castle have taken so long to develop—they were never meant to see the light of day.               
-            </p>
-            <p>
-                When a band of dysfunctional children is suddenly thrust into a diabolical realm of violence, they must grow up instantly to have a chance at survival. Will they find a way to put their differences aside, or be swallowed up by the insidious architecture all around them?
-            </p>
-        </div>
-    </main>
+            <!-- Book Description -->
+            <div class="book-description">
+                <h3>Description</h3>
+                <p>
+                    Three low-income families have been given a handsome retainer to join Geraldine Borden for a day at
+                    her cliffside estate. All the parents must do to collect the rest of their money is allow their
+                    children to test out the revolutionary playground equipment Geraldine has been working on for
+                    decades. But there's a reason the structures in the bowels of her gothic castle have taken so long
+                    to develop—they were never meant to see the light of day.
+                </p>
+                <p>
+                    When a band of dysfunctional children is suddenly thrust into a diabolical realm of violence, they
+                    must grow up instantly to have a chance at survival. Will they find a way to put their differences
+                    aside, or be swallowed up by the insidious architecture all around them?
+                </p>
+            </div>
+        </main>
     </article>
 
-        <!-- Footer -->
-        <footer>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#" class="nowrap">About Us</a></li>
-                    <li><a href="#" class="nowrap">Privacy Policy</a></li>
-                    <li><a href="#" class="nowrap">Terms and Conditions</a></li>
-                    <li><a href="#" class="nowrap">Copyright Notice</a></li>
-                    <li><a href="Contact.html" class="nowrap">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="social-links">
-                <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
-                <a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
-                <a href="https://github.com/L0ngTr4n/Static_website"><img src="img/github.png" alt="GitHub"></a>
-            </div>
-            <p>&copy; 2023 Just Read It. All rights reserved.</p>
-        </footer>
-        
-    </body>
+    <!-- Footer -->
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#" class="nowrap">About Us</a></li>
+                <li><a href="#" class="nowrap">Privacy Policy</a></li>
+                <li><a href="#" class="nowrap">Terms and Conditions</a></li>
+                <li><a href="#" class="nowrap">Copyright Notice</a></li>
+                <li><a href="Contact.html" class="nowrap">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="https://youtube.com"><img src="img/youtube.png" alt="youtube"></a>
+            <a href="https://github.com/L0ngTr4n/Static_website"><img src="img/github.png" alt="GitHub"></a>
+        </div>
+        <p>&copy; 2023 Just Read It. All rights reserved.</p>
+    </footer>
+
+</body>
+
 </html>

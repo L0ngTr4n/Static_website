@@ -1,3 +1,16 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Static website
+Author: Tran Duc Long
+ID: 3978673
+Acknowledgement: 
+https://www.w3schools.com
+https://www.barnesandnoble.com
+https://realfavicongenerator.net 
+https://www.flaticon.com
+https://www.youtube.com/watch?v=kwmHaXUAa0M -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,91 +19,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Read It !!!</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+
+    <video autoplay muted loop plays-inline class="back-video">
+        <source src="img/back-video.mp4" type="video/mp4">
+    </video>
+
     <!-- Header -->
     <header>
         <a href="index.html">
             <img class="site-logo" src="img\logo.png" alt="Site Logo">
         </a>
-        <div class="header-top">
-            <!-- Checkout cart -->
-            <!-- <div class="cart-container">
-                    <div class="checkout-cart">
-                        <span class="cart-icon">&#128722;</span> 
-                        <span>Cart (0)</span>
+
+
+
+
+        <nav>
+            <div class="burger-menu">
+                <div class="burger-container nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
                     </div>
-                </div> -->
 
 
-
-            <nav>
-                <div class="burger-menu">
-                    <div class="burger-container nav-container">
-                        <input class="checkbox" type="checkbox" name="" id="" />
-                        <div class="hamburger-lines">
-                            <span class="line line1"></span>
-                            <span class="line line2"></span>
-                            <span class="line line3"></span>
-                        </div>
-
-                        <!-- <div class="logo">
-                        <h1>Navbar</h1>
-                        </div> -->
-                        <div class="menu-items">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="Fiction.html">Fiction</a>
-                            </li>
-                            <li>
-                                <a href="Non-fiction.html">Non-Fiction</a>
-                            </li>
-                            <li>
-                                <a href="Contact.html">Contact</a>
-                            </li>
-                        </div>
+                    <div class="menu-items">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Fiction.html">Fiction</a>
+                        </li>
+                        <li>
+                            <a href="Non-fiction.html">Non-Fiction</a>
+                        </li>
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li>
                     </div>
                 </div>
-                <img class="search-icon" src="img\search-solid.png" alt="search-icon">
+            </div>
+            <img class="search-icon" src="img\search-solid.png" alt="search-icon">
 
-            </nav>
+        </nav>
 
 
 
-            <!-- Navigation (Hidden for desktop, visible for mobile) -->
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="Fiction.html">Fiction</a>
-                    </li>
-                    <li>
-                        <a href="Non-fiction.html">Non-Fiction</a>
-                    </li>
-                    <li>
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                </ul>
+        <!-- Navigation (Hidden for desktop, visible for mobile) -->
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Fiction.html">Fiction</a>
+                </li>
+                <li>
+                    <a href="Non-fiction.html">Non-Fiction</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+            </ul>
 
-                <div class="search-bar">
-                    <input type="text" class="search-input" placeholder="Search...">
-                    <button class="search-button">Search</button>
-                </div>
-
-            </nav>
-            <!-- <div class="search-bar">
+            <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Search...">
                 <button class="search-button">Search</button>
-            </div> -->
+            </div>
+
+        </nav>
+
     </header>
 
     <article>
+
         <!-- Main Content -->
         <div class="container">
             <h2>Welcome to Just Read It!</h2>
@@ -99,6 +112,8 @@
                 <a href="Fiction.html" class="category-link">Fiction</a>
             </div>
             <br>
+
+
 
             <!-- Book List -->
             <div class="book">
